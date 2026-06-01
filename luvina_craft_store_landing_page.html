@@ -1,0 +1,570 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Luvina Craft Store - Custom Bag Charm Terlucu & Trendi</title>
+    <!-- Google Fonts: Fredoka & Quicksand (Aesthetic, rounded, and cute) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600;700&family=Quicksand:wght@400;500;700&display=swap" rel="stylesheet">
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        creamBg: '#FAF4EB',
+                        luvinaGreen: '#8AA382',
+                        luvinaYellow: '#F3C043',
+                        luvinaPink: '#E5989B',
+                        luvinaPurple: '#A5A5D8',
+                        luvinaBlue: '#90E0EF',
+                        luvinaOrange: '#E76F51',
+                        luvinaDark: '#4A4E69'
+                    },
+                    fontFamily: {
+                        fredoka: ['Fredoka', 'sans-serif'],
+                        quicksand: ['Quicksand', 'sans-serif']
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            font-family: 'Quicksand', sans-serif;
+            background-color: #FAF4EB;
+        }
+        /* Soft, playful sticker shadow effect */
+        .sticker-shadow {
+            filter: drop-shadow(4px 4px 0px rgba(74, 78, 105, 0.15));
+        }
+        .border-pop {
+            border: 3px solid #4A4E69;
+        }
+        .shadow-pop {
+            box-shadow: 4px 4px 0px #4A4E69;
+        }
+        .shadow-pop-hover:hover {
+            transform: translate(-2px, -2px);
+            box-shadow: 6px 6px 0px #4A4E69;
+        }
+        .shadow-pop-hover {
+            transition: all 0.2s ease-in-out;
+        }
+        /* Custom scrollbar */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #FAF4EB;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #E5989B;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body class="text-luvinaDark selection:bg-luvinaPink selection:text-white">
+
+    <!-- HEADER / NAVIGATION -->
+    <header class="sticky top-0 z-50 bg-creamBg/90 backdrop-blur-md border-b-2 border-luvinaDark/10 px-4 py-3">
+        <div class="max-w-6xl mx-auto flex justify-between items-center">
+            <!-- Brand Logo Mockup -->
+            <div class="flex items-center gap-2 cursor-pointer">
+                <div class="w-10 h-10 rounded-full bg-luvinaPink border-pop flex items-center justify-center font-fredoka text-white text-xl font-bold">L</div>
+                <div>
+                    <span class="font-fredoka text-2xl font-bold tracking-wide">
+                        <span class="text-luvinaGreen">L</span><span class="text-luvinaYellow">u</span><span class="text-luvinaPink">v</span><span class="text-luvinaPurple">i</span><span class="text-luvinaBlue">n</span><span class="text-luvinaOrange">a</span>
+                    </span>
+                    <p class="text-[10px] font-semibold tracking-widest text-gray-500 -mt-1">CRAFT STORE</p>
+                </div>
+            </div>
+            
+            <!-- Quick Links -->
+            <nav class="hidden md:flex gap-6 font-semibold">
+                <a href="#solusi" class="hover:text-luvinaPink transition">Solusi Kami</a>
+                <a href="#customizer" class="hover:text-luvinaOrange transition">DIY Simulator</a>
+                <a href="#manfaat" class="hover:text-luvinaGreen transition">Manfaat</a>
+                <a href="#kontak" class="hover:text-luvinaPurple transition">Order</a>
+            </nav>
+
+            <!-- CTA Header Button -->
+            <a href="#customizer" class="px-4 py-2 bg-luvinaPink text-white border-pop shadow-pop font-fredoka rounded-full text-sm hover:bg-white hover:text-luvinaPink transition-all shadow-pop-hover">
+                Coba Custom Sekarang!
+            </a>
+        </div>
+    </header>
+
+    <!-- HERO SECTION -->
+    <section class="max-w-6xl mx-auto px-4 py-12 md:py-20 grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+        <!-- Text Area -->
+        <div class="space-y-6">
+            <div class="inline-flex items-center gap-2 px-3 py-1 bg-white border-2 border-luvinaDark/20 rounded-full text-xs font-semibold text-luvinaOrange">
+                <i class="fa-solid fa-sparkles"></i> #1 Custom Bag Charm Store di Surabaya
+            </div>
+            <h1 class="font-fredoka text-5xl md:text-6xl font-bold leading-tight">
+                Express Your True <span class="text-luvinaPink underline decoration-wavy decoration-luvinaYellow">Style!</span> ✨
+            </h1>
+            <p class="text-lg text-gray-600 leading-relaxed font-medium">
+                Bosan dengan tampilan tas yang polos dan pasaran? Luvina menghadirkan <strong class="text-luvinaDark">bag charm unik, customizable, dan selalu mengikuti tren</strong> yang siap merepresentasikan identitas unik kepribadianmu!
+            </p>
+            
+            <!-- CTAs -->
+            <div class="flex flex-wrap gap-4 pt-2">
+                <a href="#customizer" class="px-6 py-3 bg-luvinaYellow text-luvinaDark font-fredoka font-bold rounded-2xl border-pop shadow-pop hover:bg-white hover:shadow-lg transition-all shadow-pop-hover flex items-center gap-2">
+                    <i class="fa-solid fa-wand-magic-sparkles"></i> Mulai Desain Sendiri
+                </a>
+                <a href="https://instagram.com" target="_blank" class="px-6 py-3 bg-white text-luvinaDark font-fredoka font-bold rounded-2xl border-pop hover:bg-gray-50 transition-all flex items-center gap-2">
+                    <i class="fa-brands fa-instagram text-luvinaPink"></i> Kepoin IG Kami
+                </a>
+            </div>
+
+            <!-- Trust Badge -->
+            <div class="flex items-center gap-4 pt-4 border-t-2 border-dashed border-luvinaDark/10">
+                <div class="flex -space-x-3">
+                    <div class="w-8 h-8 rounded-full border-2 border-white bg-luvinaGreen text-[10px] text-white flex items-center justify-center font-bold">15K</div>
+                    <div class="w-8 h-8 rounded-full border-2 border-white bg-luvinaPink text-[10px] text-white flex items-center justify-center font-bold">Gen Z</div>
+                    <div class="w-8 h-8 rounded-full border-2 border-white bg-luvinaYellow text-[10px] text-white flex items-center justify-center font-bold">Sby</div>
+                </div>
+                <p class="text-xs text-gray-500 font-semibold">Telah diuji oleh ratusan mahasiswa kreatif di Surabaya!</p>
+            </div>
+        </div>
+
+        <!-- Visual Hero (Sticker Grid & Cute Mockup) -->
+        <div class="relative flex justify-center">
+            <div class="relative w-80 h-80 md:w-96 md:h-96 bg-white border-pop rounded-full shadow-pop flex items-center justify-center p-6 bg-gradient-to-tr from-luvinaPink/10 to-luvinaBlue/15">
+                <!-- Floating Decorative Sticker-like Icons -->
+                <div class="absolute -top-4 -left-4 w-16 h-16 bg-luvinaYellow text-white border-pop rounded-2xl flex items-center justify-center text-3xl rotate-[-12deg] sticker-shadow">
+                    🍎
+                </div>
+                <div class="absolute top-10 -right-4 w-14 h-14 bg-luvinaBlue text-white border-pop rounded-full flex items-center justify-center text-2xl rotate-[15deg] sticker-shadow">
+                    ⭐
+                </div>
+                <div class="absolute -bottom-2 -right-2 w-16 h-16 bg-luvinaPurple text-white border-pop rounded-2xl flex items-center justify-center text-3xl rotate-[-8deg] sticker-shadow">
+                    🎀
+                </div>
+                <div class="absolute -bottom-6 left-10 px-4 py-2 bg-white text-luvinaDark border-pop rounded-full font-fredoka font-bold text-xs shadow-pop">
+                    🎒 Cocok untuk Ransel & Tote Bag!
+                </div>
+                
+                <!-- Main Bag Charm Visual Mockup -->
+                <div class="flex flex-col items-center">
+                    <img src="https://images.unsplash.com/photo-1544816155-12df9643f363?q=80&w=600&auto=format&fit=crop" alt="Bag" class="w-48 h-48 object-cover rounded-3xl border-pop sticker-shadow">
+                    <div class="absolute top-[55%] animate-bounce">
+                        <div class="flex flex-col items-center">
+                            <!-- Keychain Cord -->
+                            <div class="w-1 h-8 bg-gray-400 border-pop"></div>
+                            <!-- Acrylic Beads assembly representation -->
+                            <div class="w-10 h-10 rounded-full bg-luvinaPink border-pop flex items-center justify-center text-white font-bold text-sm">A</div>
+                            <div class="w-8 h-8 rounded-full bg-luvinaYellow border-pop -mt-1 flex items-center justify-center text-white font-bold text-xs">⭐</div>
+                            <div class="w-12 h-12 rounded-full bg-white border-pop -mt-1 flex items-center justify-center text-2xl">🍎</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SOLUSI SEKTOR (Urusan Pelanggan) -->
+    <section id="solusi" class="bg-white border-y-4 border-luvinaDark py-16">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="text-center max-w-2xl mx-auto space-y-4 mb-12">
+                <h2 class="font-fredoka text-4xl font-bold">Bosen Tampil <span class="text-luvinaOrange">Seragam?</span></h2>
+                <p class="text-gray-500 font-medium">Banyak aksesoris di pasaran yang kaku, membosankan, dan tidak mencerminkan keunikan dirimu yang sesungguhnya. Luvina adalah jawabannya!</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Solusi 1 -->
+                <div class="bg-creamBg border-pop shadow-pop p-6 rounded-3xl space-y-4">
+                    <div class="w-12 h-12 rounded-2xl bg-luvinaPink border-pop flex items-center justify-center text-2xl text-white">
+                        👑
+                    </div>
+                    <h3 class="font-fredoka text-xl font-bold text-luvinaDark">100% Ekspresi Diri</h3>
+                    <p class="text-gray-600 font-medium text-sm leading-relaxed">
+                        Pilih manik-manik, inisial namamu, hingga ornamen buah/bintang favoritmu sendiri agar aksesorismu tiada duanya di dunia.
+                    </p>
+                </div>
+                <!-- Solusi 2 -->
+                <div class="bg-creamBg border-pop shadow-pop p-6 rounded-3xl space-y-4">
+                    <div class="w-12 h-12 rounded-2xl bg-luvinaGreen border-pop flex items-center justify-center text-2xl text-white">
+                        ✨
+                    </div>
+                    <h3 class="font-fredoka text-xl font-bold text-luvinaDark">Selalu Mengikuti Tren</h3>
+                    <p class="text-gray-600 font-medium text-sm leading-relaxed">
+                        Kami selalu memperbarui katalog hiasan kami setiap minggu sesuai tren fashion terbaru yang sedang viral di TikTok & Instagram!
+                    </p>
+                </div>
+                <!-- Solusi 3 -->
+                <div class="bg-creamBg border-pop shadow-pop p-6 rounded-3xl space-y-4">
+                    <div class="w-12 h-12 rounded-2xl bg-luvinaYellow border-pop flex items-center justify-center text-2xl text-white">
+                        🌱
+                    </div>
+                    <h3 class="font-fredoka text-xl font-bold text-luvinaDark">Kualitas Premium</h3>
+                    <p class="text-gray-600 font-medium text-sm leading-relaxed">
+                        Terbuat dari bahan akrilik tebal, tali non-elastis yang kuat, dan logam anti-karat agar awet menghias tas petualanganmu sehari-hari.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- INTERACTIVE DIY CUSTOMIZER SIMULATOR -->
+    <section id="customizer" class="max-w-6xl mx-auto px-4 py-16">
+        <div class="text-center max-w-2xl mx-auto space-y-3 mb-10">
+            <span class="px-3 py-1 bg-luvinaPurple/20 text-luvinaPurple rounded-full text-xs font-bold font-fredoka uppercase tracking-wider">Fitur Spesial</span>
+            <h2 class="font-fredoka text-4xl font-bold">Simulator DIY Bag Charm Luvina</h2>
+            <p class="text-gray-500 font-medium">Coba rakit bag charm impianmu secara instan sekarang! Klik ikon hiasan di sebelah kanan untuk menyusunnya langsung pada rantai gantungan.</p>
+        </div>
+
+        <!-- Simulator Container -->
+        <div class="bg-white border-pop shadow-pop rounded-3xl p-6 md:p-10 grid grid-cols-1 lg:grid-cols-12 gap-8 items-stretch">
+            
+            <!-- Left Side: Interactive Preview (5 Columns) -->
+            <div class="lg:col-span-5 bg-creamBg rounded-2xl border-2 border-dashed border-luvinaDark/30 p-6 flex flex-col items-center justify-center relative min-h-[400px]">
+                
+                <!-- Reset Button -->
+                <button onclick="resetCharm()" class="absolute top-4 right-4 px-3 py-1.5 bg-white text-xs font-bold rounded-lg border-pop shadow-pop hover:bg-red-100 transition active:translate-y-1">
+                    <i class="fa-solid fa-rotate-left"></i> Reset
+                </button>
+
+                <!-- Virtual Tote Bag Drawing background -->
+                <div class="relative flex flex-col items-center">
+                    <!-- The Virtual Bag Graphic -->
+                    <div class="w-44 h-48 bg-luvinaBlue rounded-b-3xl rounded-t-lg border-pop relative flex items-end justify-center shadow-md">
+                        <!-- Bag Strap -->
+                        <div class="absolute -top-12 w-28 h-24 border-pop border-b-0 rounded-t-full"></div>
+                        <div class="w-full h-8 bg-white/30 border-t-2 border-luvinaDark/25 p-2 flex justify-between rounded-b-3xl">
+                            <div class="w-2 h-2 rounded-full bg-luvinaDark/30"></div>
+                            <div class="w-2 h-2 rounded-full bg-luvinaDark/30"></div>
+                        </div>
+                    </div>
+
+                    <!-- Hanging Charm Component -->
+                    <div class="absolute top-4 left-[80%] z-20 flex flex-col items-center">
+                        <!-- Clasp Hook -->
+                        <div class="w-5 h-7 rounded-t-full border-pop border-b-2 bg-gray-300"></div>
+                        <!-- Split Ring -->
+                        <div class="w-4 h-4 rounded-full border-pop bg-gray-200 -mt-2"></div>
+                        
+                        <!-- Dynamic Charm Items Hooked Here! -->
+                        <div id="charm-chain" class="flex flex-col items-center -mt-1 space-y-[-4px]">
+                            <!-- Default item to start -->
+                            <div id="item-apple" class="w-12 h-12 bg-white rounded-full border-pop flex items-center justify-center text-2xl transition-all duration-300 sticker-shadow">🍎</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Live Price Indicator -->
+                <div class="mt-8 text-center">
+                    <p class="text-xs text-gray-500 font-bold uppercase">Estimasi Harga Rakitanmu</p>
+                    <p class="font-fredoka text-3xl font-bold text-luvinaOrange" id="live-price">Rp 15.000</p>
+                </div>
+            </div>
+
+            <!-- Right Side: Customizer Controls (7 Columns) -->
+            <div class="lg:col-span-7 flex flex-col justify-between space-y-6">
+                <!-- Step 1: Base Metal Options -->
+                <div>
+                    <h3 class="font-fredoka text-lg font-bold mb-3"><span class="text-luvinaYellow">1.</span> Pilih Warna Ring Gantungan</h3>
+                    <div class="grid grid-cols-3 gap-3">
+                        <button onclick="changeRing('Silver')" class="p-3 bg-gray-100 rounded-xl border-pop shadow-pop font-bold text-sm text-center ring-btn active" id="ring-silver">
+                            ⛓️ Silver Steel
+                        </button>
+                        <button onclick="changeRing('Gold')" class="p-3 bg-yellow-50 rounded-xl border-pop font-bold text-sm text-center ring-btn" id="ring-gold">
+                            🟡 Gold Classic
+                        </button>
+                        <button onclick="changeRing('Acrylic')" class="p-3 bg-pink-50 rounded-xl border-pop font-bold text-sm text-center ring-btn" id="ring-acrylic">
+                            🎀 Pita Pink
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Step 2: Add Acrylic Ornaments -->
+                <div>
+                    <h3 class="font-fredoka text-lg font-bold mb-3"><span class="text-luvinaPink">2.</span> Tambah Hiasan Manik-manik & Ornamen</h3>
+                    <div class="grid grid-cols-2 md:grid-cols-4 gap-3">
+                        <!-- Apple -->
+                        <button onclick="addCharm('Apple', '🍎', 5000)" class="p-3 bg-white hover:bg-luvinaPink/10 rounded-xl border-pop flex flex-col items-center gap-1">
+                            <span class="text-3xl">🍎</span>
+                            <span class="text-xs font-bold">Apel (Logo)</span>
+                            <span class="text-[10px] text-gray-500 font-semibold">+Rp 5rb</span>
+                        </button>
+                        <!-- Star -->
+                        <button onclick="addCharm('Star', '⭐', 4000)" class="p-3 bg-white hover:bg-luvinaYellow/10 rounded-xl border-pop flex flex-col items-center gap-1">
+                            <span class="text-3xl">⭐</span>
+                            <span class="text-xs font-bold">Bintang</span>
+                            <span class="text-[10px] text-gray-500 font-semibold">+Rp 4rb</span>
+                        </button>
+                        <!-- Love -->
+                        <button onclick="addCharm('Heart', '💖', 4000)" class="p-3 bg-white hover:bg-luvinaPink/10 rounded-xl border-pop flex flex-col items-center gap-1">
+                            <span class="text-3xl">💖</span>
+                            <span class="text-xs font-bold">Pink Love</span>
+                            <span class="text-[10px] text-gray-500 font-semibold">+Rp 4rb</span>
+                        </button>
+                        <!-- Clover -->
+                        <button onclick="addCharm('Clover', '🍀', 5000)" class="p-3 bg-white hover:bg-luvinaGreen/10 rounded-xl border-pop flex flex-col items-center gap-1">
+                            <span class="text-3xl">🍀</span>
+                            <span class="text-xs font-bold">Clover</span>
+                            <span class="text-[10px] text-gray-500 font-semibold">+Rp 5rb</span>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Step 3: Add Initials -->
+                <div>
+                    <h3 class="font-fredoka text-lg font-bold mb-3"><span class="text-luvinaPurple">3.</span> Tambahkan Inisial Namamu (+Rp 2.000 / huruf)</h3>
+                    <div class="flex gap-2">
+                        <input type="text" id="initial-input" maxlength="1" placeholder="A" class="w-16 px-3 py-2 border-pop rounded-xl text-center font-fredoka text-xl focus:outline-none focus:ring-2 focus:ring-luvinaPink">
+                        <button onclick="addLetterCharm()" class="px-4 py-2 bg-luvinaPurple text-white border-pop shadow-pop font-fredoka font-bold rounded-xl shadow-pop-hover">
+                            + Pasang Huruf
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Final Action -->
+                <div class="pt-4 border-t-2 border-dashed border-luvinaDark/10 flex flex-col sm:flex-row gap-4 items-center justify-between">
+                    <div>
+                        <p class="text-xs text-gray-500 font-bold">Desain sudah cocok?</p>
+                        <p class="text-sm font-semibold">Kirim rancanganmu via WhatsApp untuk diproduksi!</p>
+                    </div>
+                    <button onclick="orderViaWhatsapp()" class="w-full sm:w-auto px-6 py-3 bg-green-500 text-white font-fredoka font-bold rounded-2xl border-pop shadow-pop hover:bg-green-600 transition shadow-pop-hover flex items-center justify-center gap-2">
+                        <i class="fa-brands fa-whatsapp text-xl"></i> Kirim Desain ke Admin
+                    </button>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- MANFAAT FUNGSIONAL & SOSIAL (image_efe3e0.png) -->
+    <section id="manfaat" class="bg-luvinaBlue/10 border-t-4 border-b-2 border-luvinaDark py-16">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="text-center max-w-2xl mx-auto mb-12">
+                <h2 class="font-fredoka text-4xl font-bold mb-3">Kenapa Kamu Wajib Punya <span class="text-luvinaPink">Luvina?</span></h2>
+                <p class="text-gray-500 font-medium">Bukan gantungan kunci biasa, Luvina dirancang sebagai ekspresi jati diri kreatifmu.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Card 1 -->
+                <div class="bg-white border-pop rounded-3xl p-6 shadow-pop">
+                    <div class="w-12 h-12 rounded-2xl bg-luvinaYellow text-white border-pop flex items-center justify-center text-2xl mb-4">🎨</div>
+                    <h3 class="font-fredoka text-xl font-bold mb-2">Aksesoris Unik & Sesuai Selera</h3>
+                    <p class="text-gray-600 text-sm font-medium leading-relaxed">
+                        Desain gantungan tas dirakit secara handmade satu per satu, memastikan hasil produk benar-benar bersih, estetik, dan presisi tinggi sesuai pesanan.
+                    </p>
+                </div>
+                <!-- Card 2 -->
+                <div class="bg-white border-pop rounded-3xl p-6 shadow-pop">
+                    <div class="w-12 h-12 rounded-2xl bg-luvinaPink text-white border-pop flex items-center justify-center text-2xl mb-4">🌟</div>
+                    <h3 class="font-fredoka text-xl font-bold mb-2">Bisa Custom Kepribadian</h3>
+                    <p class="text-gray-600 text-sm font-medium leading-relaxed">
+                        Tunjukkan inisial namamu, grup fandom K-Pop kesukaanmu, atau perpaduan warna favoritmu agar semua orang tahu kepribadian unikmu dari luar.
+                    </p>
+                </div>
+                <!-- Card 3 -->
+                <div class="bg-white border-pop rounded-3xl p-6 shadow-pop">
+                    <div class="w-12 h-12 rounded-2xl bg-luvinaGreen text-white border-pop flex items-center justify-center text-2xl mb-4">🎒</div>
+                    <h3 class="font-fredoka text-xl font-bold mb-2">Mempercantik Tampilan Tas</h3>
+                    <p class="text-gray-600 text-sm font-medium leading-relaxed">
+                        Ubah seketika tas sekolah, tas ransel kuliah, ataupun tote bag jalan-jalan polosmu menjadi lebih ceria, menarik perhatian, dan berestetika tinggi.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CALL TO ACTION (ORDER PLATFORMS) -->
+    <section id="kontak" class="max-w-4xl mx-auto px-4 py-16 text-center">
+        <div class="bg-luvinaYellow/20 border-pop shadow-pop rounded-3xl p-8 md:p-12 space-y-6 relative overflow-hidden">
+            <!-- Background element -->
+            <div class="absolute -top-12 -left-12 w-32 h-32 rounded-full bg-luvinaYellow/30 -z-10"></div>
+            <div class="absolute -bottom-12 -right-12 w-32 h-32 rounded-full bg-luvinaPink/30 -z-10"></div>
+
+            <h2 class="font-fredoka text-4xl font-bold text-luvinaDark">Siap Tampil Beda Hari Ini? 🧸</h2>
+            <p class="text-gray-600 font-medium max-w-lg mx-auto">
+                Pilih metode pemesanan yang paling praktis buat kamu. Kami melayani pengiriman kilat area Surabaya dan seluruh Indonesia!
+            </p>
+
+            <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 pt-4">
+                <!-- Shopee Link -->
+                <a href="https://shopee.co.id" target="_blank" class="px-6 py-4 bg-orange-500 text-white font-fredoka font-bold rounded-2xl border-pop shadow-pop shadow-pop-hover flex flex-col items-center justify-center gap-1">
+                    <i class="fa-solid fa-bag-shopping text-2xl"></i>
+                    <span>Order via Shopee</span>
+                </a>
+                <!-- TikTok Shop Link -->
+                <a href="https://tiktok.com" target="_blank" class="px-6 py-4 bg-black text-white font-fredoka font-bold rounded-2xl border-pop shadow-pop shadow-pop-hover flex flex-col items-center justify-center gap-1">
+                    <i class="fa-brands fa-tiktok text-2xl"></i>
+                    <span>TikTok Shop</span>
+                </a>
+                <!-- WhatsApp Link -->
+                <a href="https://wa.me/628123456789" target="_blank" class="px-6 py-4 bg-green-500 text-white font-fredoka font-bold rounded-2xl border-pop shadow-pop shadow-pop-hover flex flex-col items-center justify-center gap-1">
+                    <i class="fa-brands fa-whatsapp text-2xl"></i>
+                    <span>Chat Order Custom</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="bg-luvinaDark text-white border-t-4 border-luvinaDark py-8 px-4">
+        <div class="max-w-6xl mx-auto flex flex-col md:flex-row justify-between items-center gap-6">
+            <!-- Brand Logo -->
+            <div class="flex items-center gap-2">
+                <div class="w-8 h-8 rounded-full bg-luvinaPink flex items-center justify-center font-fredoka text-white text-lg font-bold">L</div>
+                <div>
+                    <span class="font-fredoka text-xl font-bold tracking-wide">
+                        <span class="text-luvinaGreen">L</span><span class="text-luvinaYellow">u</span><span class="text-luvinaPink">v</span><span class="text-luvinaPurple">i</span><span class="text-luvinaBlue">n</span><span class="text-luvinaOrange">a</span>
+                    </span>
+                    <p class="text-[8px] font-semibold tracking-widest text-gray-400 -mt-1">CRAFT STORE</p>
+                </div>
+            </div>
+
+            <!-- Copyright -->
+            <p class="text-xs font-semibold text-gray-400">
+                &copy; 2026 Luvina Craft Store (Surabaya). All rights reserved.
+            </p>
+
+            <!-- Social Media -->
+            <div class="flex gap-4">
+                <a href="#" class="w-8 h-8 rounded-full bg-white/10 hover:bg-white/20 flex items-center justify-center text-lg transition"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#" class="w-8 h-8 rounded-full bg-white/10 hover:bg-white/20 flex items-center justify-center text-lg transition"><i class="fa-brands fa-tiktok"></i></a>
+                <a href="#" class="w-8 h-8 rounded-full bg-white/10 hover:bg-white/20 flex items-center justify-center text-lg transition"><i class="fa-solid fa-envelope"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- INTERACTIVE JAVASCRIPT FOR SIMULATOR -->
+    <script>
+        // Store simulator items
+        let currentChain = [
+            { id: 'Apple', icon: '🍎', price: 5000 }
+        ];
+        let currentRing = 'Silver';
+        const ringPrices = {
+            'Silver': 10000,
+            'Gold': 12000,
+            'Acrylic': 8000
+        };
+
+        // Render the chain onto preview
+        function renderChain() {
+            const container = document.getElementById('charm-chain');
+            container.innerHTML = '';
+
+            // Render Ring Clasp
+            currentChain.forEach((item, index) => {
+                const charmDiv = document.createElement('div');
+                charmDiv.className = "w-12 h-12 bg-white rounded-full border-pop flex items-center justify-center text-2xl transition-all duration-300 sticker-shadow hover:scale-110 cursor-pointer relative group";
+                charmDiv.innerHTML = item.icon;
+                
+                // Remove on click
+                charmDiv.onclick = () => removeCharm(index);
+                
+                // Tooltip
+                const tooltip = document.createElement('span');
+                tooltip.className = "absolute -bottom-6 bg-luvinaDark text-white text-[9px] font-bold px-1.5 py-0.5 rounded opacity-0 group-hover:opacity-100 transition duration-150 pointer-events-none z-30 whitespace-nowrap";
+                tooltip.innerText = "Klik untuk hapus";
+                charmDiv.appendChild(tooltip);
+
+                container.appendChild(charmDiv);
+            });
+
+            // Update Total Price
+            calculatePrice();
+        }
+
+        // Add charm
+        function addCharm(name, icon, price) {
+            if (currentChain.length >= 5) {
+                alert("Wah, gantungan tas kamu sudah penuh! Maksimal 5 ornamen saja ya biar muat.");
+                return;
+            }
+            currentChain.push({ id: name, icon: icon, price: price });
+            renderChain();
+        }
+
+        // Add Custom letter charm
+        function addLetterCharm() {
+            const input = document.getElementById('initial-input');
+            const letter = input.value.toUpperCase().trim();
+            if (!letter) {
+                alert("Ketik 1 huruf dulu ya!");
+                return;
+            }
+            if (currentChain.length >= 5) {
+                alert("Wah, gantungan tas kamu sudah penuh! Maksimal 5 ornamen saja ya.");
+                return;
+            }
+            currentChain.push({ id: 'Letter-' + letter, icon: letter, price: 2000 });
+            input.value = ''; // clear input
+            renderChain();
+        }
+
+        // Remove a charm
+        function removeCharm(index) {
+            currentChain.splice(index, 1);
+            renderChain();
+        }
+
+        // Change base ring
+        function changeRing(type) {
+            currentRing = type;
+            
+            // Toggle active buttons styling
+            document.querySelectorAll('.ring-btn').forEach(btn => {
+                btn.classList.remove('active', 'bg-luvinaYellow', 'text-luvinaDark');
+            });
+            
+            if (type === 'Silver') {
+                document.getElementById('ring-silver').classList.add('active', 'bg-luvinaYellow');
+            } else if (type === 'Gold') {
+                document.getElementById('ring-gold').classList.add('active', 'bg-luvinaYellow');
+            } else if (type === 'Acrylic') {
+                document.getElementById('ring-acrylic').classList.add('active', 'bg-luvinaYellow');
+            }
+
+            calculatePrice();
+        }
+
+        // Reset all
+        function resetCharm() {
+            currentChain = [{ id: 'Apple', icon: '🍎', price: 5000 }];
+            renderChain();
+        }
+
+        // Calculate final price
+        function calculatePrice() {
+            let total = ringPrices[currentRing];
+            currentChain.forEach(item => {
+                total += item.price;
+            });
+
+            // Format Currency
+            const formatter = new Intl.NumberFormat('id-ID', {
+                style: 'currency',
+                currency: 'IDR',
+                minimumFractionDigits: 0
+            });
+            document.getElementById('live-price').innerText = formatter.format(total);
+        }
+
+        // Order via WhatsApp (Generates custom link with current selection text!)
+        function orderViaWhatsapp() {
+            let ornamenList = currentChain.map(item => item.icon + " (" + item.id + ")").join(", ");
+            if (!ornamenList) ornamenList = "Belum memilih ornamen";
+            
+            const message = `Halo Kak Admin Luvina! Saya mau pesan Custom Bag Charm hasil rancangan saya di Simulator Website:%0A%0A- Warna Ring: ${currentRing}%0A- Susunan Ornamen: ${ornamenList}%0A- Estimasi Harga: ${document.getElementById('live-price').innerText}%0A%0AApakah bisa langsung diproses Kak? ✨`;
+            
+            window.open(`https://wa.me/628123456789?text=${message}`, '_blank');
+        }
+
+        // Initialize
+        renderChain();
+    </script>
+</body>
+</html>
